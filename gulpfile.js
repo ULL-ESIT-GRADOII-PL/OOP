@@ -16,6 +16,13 @@ gulp.task('debug', shell.task('NODE_PATH=./src node --inspect --debug-brk src/ma
 
 gulp.task("test", shell.task("NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"));
 
+gulp.task("travis", shell.task("open -n -a 'Google Chrome' --args '--new-tab' https://travis-ci.org/ULL-ESIT-GRADOII-PL/OOP"));
+
+/* If not working:
+ * Try entering chrome://restart in url line and hit enter. This will fully restart Chrome and all of it's children processes including Chrome-based apps. I assume it's not the Update which helped others here, but the Chrome restart.
+ */
+gulp.task("travis-PL", shell.task("open https://travis-ci.org/profile/ULL-ESIT-GRADOII-PL"));
+
 // nyc is istanbul command line interface
 gulp.task("cover", shell.task("NODE_PATH=./src ./node_modules/.bin/nyc --reporter=html ./node_modules/.bin/mocha --require should"));
 
