@@ -3,7 +3,7 @@
 
 ## El Contexto. Introducción
 
-La función `dataTable` en `d-table.js` es la que parsea el objeto construído a partir de la entrada y decide la clase de celda que se aplica a cada entrada, retornando un array de objetos que son de laguna clase *Celda*: 
+La función `dataTable` en `d-table.js` es la que parsea el objeto construído a partir de la entrada y decide la clase de celda que se aplica a cada entrada, retornando un array de objetos que son de alguna clase *Celda*: 
 
 ```js
   dataTable(data) {
