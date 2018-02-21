@@ -78,4 +78,5 @@ se interpreten como `StrechCell`s**
   > ({c:4,w:2,h:3}).constructor.name
   'Object'
   ```
-
+* [RegExp test](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/RegExp/test)
+* [Array concat](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/concat)
