@@ -51,7 +51,7 @@ se interpreten como `StrechCell`s**
 
   Sigue un ejemplo de entrada:
 
-  ```js
+  ```
   [
     {"name": {"c": "Teide, "h": 2, "w":6}, "height": 3718, "country": "Spain"},
     {"name": "Kilimanjaro\nMontaña mágica", "height": 5895, "country": "Tanzania"},
