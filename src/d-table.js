@@ -6,6 +6,7 @@ class DTable {
   constructor () {}
 
   drawAllTable(data) {
+    debugger;
     return this.drawTable(this.dataTable(data))
   }
 
@@ -32,6 +33,7 @@ class DTable {
   }
 
   dataTable(data) {
+    debugger;
     var keys = Object.keys(data[0]);
     var headers = keys.map(function(name) {
       return new UnderlinedCell(name);
