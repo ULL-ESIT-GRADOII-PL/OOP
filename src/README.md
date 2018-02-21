@@ -47,7 +47,7 @@ La función `dataTable` en `d-table.js` es la que parsea el objeto construído a
 ## Objetivo
 
 **Modifique `dataTable` para que aquellas celdas en las que el valor es un objeto en vez de una ` String` 
-se interpreten como `StrechCell`s**
+se interpreten como `StrechCell`**
 
   Sigue un ejemplo de entrada:
 
