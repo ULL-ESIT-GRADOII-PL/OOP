@@ -31,13 +31,13 @@ La función `dataTable` en `d-table.js` es la que parsea el objeto construído a
       return new UnderlinedCell(name);
     });
   ```
-* Si parece que el contenido es un número es tratado como una `RCell` 
+* Si parece que el contenido es un número, es tratado como una `RCell` 
 
   ```js
           if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
             return new RCell(String(value));
   ```
-* Si no es tratado como una `TCell`:
+* Si no, es tratado como una `TCell`:
 
   ```js
           else
