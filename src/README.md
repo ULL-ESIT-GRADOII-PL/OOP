@@ -46,28 +46,29 @@ La función `dataTable` en `d-table.js` es la que parsea el objeto construído a
 
 ## Objetivo
 
-**Modifique `dataTable` para que aquellas celdas en las que el valor es un objeto en vez de una ` String` 
-se interpreten como `StrechCell`**
+**Modifique `dataTable` para que aquellas celdas en las que el valor es un objeto en vez de una ` String`  o un `Number`
+se interpreten como del tipo specificado en el atributo `type`**
 
   Sigue un ejemplo de entrada:
 
   ```
   [
-    {"name": {"c": "Teide, "h": 2, "w":6}, "height": 3718, "country": "Spain"},
+    {"name": {"type": "StrechCell", params: ["Teide", 2, 6]}, "height": 3718, "country": "Spain"},
     {"name": "Kilimanjaro\nMontaña mágica", "height": 5895, "country": "Tanzania"},
     {"name": "Everest", "height": 8848, "country": "Nepal\nPaís lejano"},
-    {"name": {"c":"Mount Fuji","h":2}, "height": 3776, "country": "Japan"},
-    {"name": "Mont Blanc", "height": {"c": 4808, "h":2}, "country": "Italy/France"},
+    {"name": {"type": "StrechCell", params: ["Mount Fuji", 2]}, "height": 3776, "country": "Japan"},
+    {"name": "Mont Blanc", "height": {"type": "TCell", params: [4808]}, "country": "Italy/France"},
     {"name": "Vaalserberg", "height": 323, "country": "Netherlands"},
     {"name": "Denali", "height": 6168, "country": "United States"},
     {"name": "Popocatepetl", "height": 5465, "country": "Mexico"}
   ]
   ```
-  **El atributo `c` tiene el contenido, el atributo `h` la altura y el atributo `w` el ancho de la `StrechCell`**
+  **El atributo `type` tiene el nombre de la clase de la celda y el atributo `params` la lista de parámetros que se pasaran al constructor de la clase.**
 
 
 ## Notas
 
+* Documentación del método [apply](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Function/apply): El método apply() invoca una determinada función asignando explícitamente el objeto this y un array o similar (array like object) como parámetros (argumentos) para dicha función.
 * En ECMA6 el método `constructor` nos devuelve el constructor, el cual tiene un atributo `name`:
 
   ```js
