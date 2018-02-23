@@ -69,6 +69,19 @@ se interpreten como del tipo specificado en el atributo `type`**
 ## Notas
 
 * Documentación del método [apply](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Function/apply): El método apply() invoca una determinada función asignando explícitamente el objeto this y un array o similar (array like object) como parámetros (argumentos) para dicha función.
+
+  ```js
+  [~/ull-pl1718-campus-virtual/tema1-intro-a-js/practica-oop/OOP/src(reto2)]$ node
+  > DTable = require("d-table")
+  > TCell = require("t-cell")
+  > RCell = require("r-cell")
+  > Classes = new Map()
+  > Classes["TCell"] = TCell
+  > Classes["RCell"] = RCell
+  > w = "RCell"
+  > x = new (Classes[w])("Chinyero")
+  RCell { text: [ 'Chinyero' ] }
+  ```
 * En ECMA6 el método `constructor` nos devuelve el constructor, el cual tiene un atributo `name`:
 
   ```js
