@@ -70,7 +70,7 @@ se interpreten como del tipo specificado en el atributo `type`**
 
 * Documentación del método [apply](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Function/apply): El método apply() invoca una determinada función asignando explícitamente el objeto `this` y un array o similar (array like object) como parámetros (argumentos) para dicha función.
 
-* Este es un ejemplo de mapa que asocia nombres de lcases con constructores;
+* Este es un ejemplo de mapa que asocia nombres de clases con constructores;
 
   ```js
   [~/ull-pl1718-campus-virtual/tema1-intro-a-js/practica-oop/OOP/src(reto2)]$ node
