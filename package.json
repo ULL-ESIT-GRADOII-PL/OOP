@@ -27,7 +27,7 @@
     "better-assert": "^1.0.2",
     "coveralls": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-shell": "^0.6.3",
+    "gulp-shell": "^0.6.5",
     "istanbul": "^0.4.5",
     "mocha": "^3.5.3",
     "nyc": "^11.4.1",
