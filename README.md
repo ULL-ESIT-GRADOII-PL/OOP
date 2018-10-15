@@ -1,3 +1,17 @@
+## Branches
+
+```
+  master
+  reto
+* reto2
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/ecma5    -- OOP solution in old ecma5
+  remotes/origin/master   -- ECMA 6 solution
+  remotes/origin/reto     -- descripción del reto
+  remotes/origin/reto2    -- descripción del reto2
+  remotes/origin/structure
+```
+
 ## Eloquent JavaScript. Chapter 6: The Secret Life of Objects.  Section *Laying out a table*
 
 
